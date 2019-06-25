@@ -1,0 +1,1 @@
+small app I made while in Japan to track how many hours I work in each of my hobbies. :)

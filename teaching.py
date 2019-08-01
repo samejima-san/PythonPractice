@@ -1,11 +1,11 @@
 #what are the names of the 4 data types, write them in comments next to them
-variable = "Hello"
-variable = 1
-variable = 0.0
-variable = True
+variable = "Luis" #String 
+variable = 1 #Interger 
+variable = 0.0 #Float 
+variable = True #Boolean
 
 #What is this block of code called?
-def Blank():
+def Blank(): #function
     return
 
 #What is the difference between these two variables
@@ -17,38 +17,51 @@ variable = "1"
 
 if(variable == 1):
     print("Yo")
-elif(variable == "1"):
+elif(variable == "1"):#This one!
     print("Yo but different")
 else:
     print("Literally anything different")
 
 #What will this output
-variable = 1
+variable = 1 #or True
+#0 = false
 
-if(variable == True):
+if(variable == True):#This one
     print("Pick me!")
 else:
     print("no pick me")
 
+#What will happen here
+variable = 3
+
+if(variable == 3):
+    print("Hello")
+if(variable > 0):
+    print("world")
+else:
+    print("how are you")
+#it will print hello world
+
 #What will this print
 k = 1 + 4 * 3
 print(k)
+#print 13 according to pemdas
 
 #What is this called?
-hello = [1,2,3,4,5,6]
+hello = [1,2,3,4,5,6] #list
 
 #what will this do?
-returnvalue = hello.pop()
+returnvalue = hello.pop() #takes things out of your list
 print(returnvalue)
 print(hello)
 
 #What will this do?
-hello.append(7)
+hello.append(7) #Add things to the list
 print(hello)
 
 #Explain the lines of this 
 class Player():
-    def __init__(self,name,health,speed,defence):
+    def __init__(self,name,health,speed,defence): #Constructor
         self.name = name
         self.health = health
         self.speed = speed
@@ -56,10 +69,10 @@ class Player():
         self.mana = 100.0
         self.multiplyer = 1.0
         self.isBlocking = False
-        self.isAlive = True
-
+        self.isAlive = True #setting all the players variables
+        
     def Attack(self, other):#Why do we add "self" in our functions for classes?
-        if(self.speed > other.speed):
+        if(self.speed > other.speed):#because you want to effect this classes attributes/variables
             other.health -= 5 * self.multiplyer
         else:
             other.health -= 2 * self.multiplyer
@@ -85,22 +98,23 @@ class Player():
         if(self.health <= 0):
             self.isAlive = False
 
+
 Aaron = Player("Aaron",150,75,100)
 Rose = Player("Rose", 75, 200, 75)
 Luis = Player("Luis", 250, 50, 50)
-Eric = Player("Eric", 100,100,100)
+Eric = Player("Eric", 100,100,100) #creating players
 
-party = [Eric, Luis, Rose, Aaron]
+party = [Eric, Luis, Rose, Aaron] #list of players
 
 
 #What is this called and what does it do?
 num = 0 
-while True:
+while True: #While loop
     print(num)
-    num += 1
+    num += 1 #count to infinity
 
 #What will this do
-for player in party:
+for player in party: #for loop
     print("Hey, my name is {} and I have a speed of {} i am kind of a big deal".format(player.name, player.speed))
 
 
